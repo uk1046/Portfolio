@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo2.png"/>
+  <title>
+    
+   Utkrushta Kolvankar - Portfolio
+  </title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <div class="profile-image">
+      <img src="profile.jpg" alt="Profile Image">
+    </div>
+    <div class="header-content">
+      <h1>Utkrushta Kolvankar</h1>
+      <p>Diploma in Computer Engineering | Full Stack Developer | Application Developer</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Diploma in Computer Engineering</h3>
+      <p>Sant Gajanan Maharaj Rural Polytechnic, Mahagaon, Kolhapur 416503</p>
+      <p>October 2021 - May 2024</p>
+    </div>
+    <div class="education-item">
+      <h3>Other Relevant Coursework</h3>
+      <ul>
+        <li>Python Concurrent Programming</li>
+        <li>Java and XML</li>
+        <li>Game development using Unity Engine</li>
+        <li>Flutter and Dart App Development</li>
+      </ul>
+    </div>
+  </section>
+  
+  
+  <section id="internship">
+    <h2>Internship Experience</h2>
+    <div class="internship-item">
+      <h3>Domain Computers, Gadhinglaj, Kolhapur 416502</h3>
+      <p>June 2023 - July 2023</p>
+      <ul>
+        <li>Participated in the design and implementation of computer network solutions, gaining hands-on experience in network configuration and troubleshooting.</li>
+        <li>Assisted in the setup and maintenance of local area networks (LANs) and wide area networks (WANs), including routers, switches, and firewalls.</li>
+        <li>Contributed to network security efforts by implementing access control policies and monitoring network traffic for potential threats.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Proficient in Java, Python, and C++</li>
+      <li>Experience with web development technologies such as HTML, CSS, JavaScript, and PHP</li>
+      <li>Experience with responsive design and cross-browser compatibility</li>
+      <li>Experience with version control systems (e.g., Git)</li>
+      <li>Strong analytical and problem-solving skills</li>
+      <li>Ability to troubleshoot and debug code effectively</li>
+      <li>Excellent communication skills</li>
+      <li>Ability to work collaboratively in a team environment</li>
+    </ul>
+  </section>
+  
+
+  <section id="projects">
+    <h2>Projects</h2>
+  
+    <div class="project-item">
+      <h3>Cashmate Android Application</h3>
+      <p>Developed an Android-based application using XML and Java with Android Studio IDE.</p>
+      <ul>
+        <li>Implemented user authentication, expense/credit management, investment, and insurance plans.</li>
+        <li>Utilized SQLite database for records management and data retrieval.</li>
+        <li><a href="https://github.com/uk1046/CashMateApp.git"> View project source with GitHub.</a></li>
+      </ul>
+    </div>
+  
+    <div class="project-item">
+      <h3>Attendance Management Android Application</h3>
+      <p>Developed an Android-based application using XML and Java with Android Studio IDE.</p>
+      <ul>
+        <li>Able to store students' attendance of that day of a particular date and can be viewed in a tabular format.</li>
+        <li>Utilized SQLite database for records management and data retrieval.</li>
+        <li><a href="https://github.com/uk1046/AttendenceApplication.git"> View project source with GitHub.</a></li>
+      </ul>
+    </div>
+  
+    <div class="project-item">
+      <h3>Complaint Management System Web Application</h3>
+      <p>Developed a web-based complaint management system using HTML, CSS, JavaScript, and PHP.</p>
+      <ul>
+        <li>Complaints can be sent by students to admin, and admin can view their complaints and send them a message too.</li>
+        <li>Utilized MySQL for records management and data retrieval.</li>
+        <li><a href="https://uk1046.github.io/Complaint_Management/"> View project.</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+
+  <footer>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p><strong>Address:</strong> Kolhapur, India 416502</p>
+      <p><strong>Phone:</strong> 9322637645</p>
+      <p><strong>E-mail:</strong> <a href="https://mail.google.com/mail/u/0/#search/kolvankaru%40gmail.com?compose=new">kolvankaru@gmail.com</a></p>
+      <ul>
+        <li><a href="https://mail.google.com/mail/u/0/#search/kolvankaru%40gmail.com?compose=new"><img src="gmail.png" alt="Gmail"></a></li>
+        <li><a href="https://www.instagram.com/uk_1046?igsh=bWphbTR3b2EwOGxs"><img src="122.jpg" alt="Instagram"></a></li>
+        <li><a href="https://www.facebook.com/utkrushta.kolvankar?mibextid=ZbWKwL"><img src="Facebook.jpg" alt="Facebook"></a></li>
+        <li><a href="https://www.linkedin.com/in/utkrushta-kolvankar-5a63bb246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linked.png" alt="LinkedIn"></a></li>
+      </ul>
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+  </footer>
+  
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+document.querySelectorAll('nav ul li a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        window.scrollTo({
+            top: target.offsetTop - 100, // Adjust offset if needed
+            behavior: 'smooth'
+        });
+    });
+});
+
+  </script>
+  
+</body>
+</html>

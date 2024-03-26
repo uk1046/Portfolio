@@ -1,0 +1,201 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #f2f2f2; /* Change background color */
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
+header {
+    background-color: #444; /* Change header background color */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 4px solid #fff; /* Add border */
+}
+
+.header-content {
+    flex-grow: 1; /* Allow header content to grow and take available space */
+}
+
+.header-content h1, .header-content p {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #444; /* Change footer background color */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Footer styles */
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.contact ul li {
+    margin-right: 10px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    display: inline-block; /* Ensures the image is treated as a block element */
+}
+
+.contact ul li img {
+    width: 40px; /* Fixed width for the logos */
+    height: 40px; /* Fixed height for the logos */
+    border-radius: 50%; /* Makes the logos circular */
+}
+
+
+/* Scroll to top button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444; /* Change button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #666; /* Change button hover background color */
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    animation: fadeInUp 1s ease forwards; /* Add animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #777;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Project item styles */
+.project-item {
+    border-bottom: 1px solid #ccc; /* Add border between project items */
+    padding-bottom: 20px; /* Add padding at the bottom */
+}
+
+.project-item:last-child {
+    border-bottom: none; /* Remove border from the last project item */
+}
+
+.project-item h3 {
+    color: #555;
+}
+
+.project-item p {
+    color: #777;
+}
+/* Add animation for menu links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Add scale effect */
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
