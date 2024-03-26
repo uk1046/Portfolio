@@ -197,5 +197,19 @@ nav ul li a:hover {
     footer {
         flex-direction: column;
         text-align: center;
+        align-items: center; /* Center footer content horizontally */
+    }
+
+    .contact {
+        text-align: center; /* Center contact information horizontally */
+    }
+
+    .contact ul {
+        justify-content: center; /* Center social media icons horizontally */
+    }
+
+    .contact ul li {
+        margin: 0 10px; /* Adjust margin for better spacing */
     }
 }
+
